@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
+
+:root{
+    --green:green;
+    --black: #130f40;
+    --lighting-color: #666;
+    --box-shadow: 0 .2rem 1rem rgba(0,0,0,1);
+    --border: 1rem solid rgba(0,0,0,1); 
+    --outline: 1rem solid rgba(0,0,0,1);
+
+    
+}
+*{
+    font-family: 'poppins',sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2S linear;
+
+    
+}
+html{
+    font-size:62.5%;
+    overflow-x: hidden;
+}
+body{
+    background: #eee;
+
+}
+.btn
+{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    color: var(--black);
+    border: .2rem solid var(--black);
+    cursor: pointer;
+    background: none;
+}
+.btn:hover
+{
+   background: var(--green);
+   color: #fff;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+.header .logo{
+    font-size: 2.5rem;
+    font-weight:bolder ;
+}
+.header .logo i{
+    color:var(--green)
+}
+.header .navbar a{
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    color: var(--black);
+}
+.header .navbar a:hover{
+    color: var(--green);
+}
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    border: 0px solid;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-align: center;
+    cursor: pointer;
+
+}
+.header .icons div:hover{
+    background-color: var(--green);
+    color: white;
+}
+.header .search{
+    position: absolute;
+    border: 1px solid;
+    top: 110%;
+    right: -110%;
+    width: 50rem;
+    height: 4rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items:center ;
+    box-shadow: var(--box-shadow);
+}
+.header .search input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+
+}
+.header .search label{
+    font-size: 1.6rem;
+    padding-right:1rem ;
+    color: var(--black);
+    cursor: pointer;
+}
+.header .search label:hover{
+    color: var(--green);
+}
+.header .search.active{
+    right: 2rem;
+    transition: .4s;
+}
+
+.header .shopping-cart
+{
+    position: absolute;
+    top: 100%;
+    right: -110%;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 30rem;
+    background: white;
+}
+.header .shopping-cart.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+.header .shopping-cart .box
+{
+    border: 0px solid blue;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    margin: 1rem 0;
+    display: flex;
+   
+}
+.header .shopping-cart .box img
+{
+    height: 10rem;
+}
+.header .shopping-cart .box .fa-trash
+{
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    cursor: pointer;
+    color: var(--lighting-color);
+}
+.header .shopping-cart .box .fa-trash:hover
+{
+    color: var(--green);
+}
+.header .shopping-cart .content h3
+{
+   color: var(--black);
+   font-size: 1.7rem;
+   padding-bottom: 1rem;
+}
+.header .shopping-cart .content span
+{
+   color: var(--lighting-color);
+   font-size: 1.6rem;
+  
+}
+.header .shopping-cart .content .quantity
+{
+    padding-left: 1rem;
+}
+
+.header .shopping-cart .total{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color:var(--black);
+}
+.header .shopping-cart .btn{
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+}
+.header .login-form
+{
+    position: absolute;
+    top: 110%;
+    right: 2rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+    width: 30rem;
+
+}
+.header .login-form h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+.header .login-form .box{
+    width: 100%;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+
+}
